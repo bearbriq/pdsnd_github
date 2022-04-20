@@ -176,7 +176,8 @@ def trip_duration_stats(df):
 
 
 def user_stats(city, df):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on bikeshare users.
+       string indices must be integers"""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()

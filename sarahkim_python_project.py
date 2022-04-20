@@ -37,7 +37,8 @@ def get_filters():
             break
         finally:
             print('\nAttempted input: {}'.format(city))
-
+            
+    """prevent recursive code """
     while city not in CITY_DATA:
         city = str(input('Invalid city. Please enter your city of choice again.\n'))
 
@@ -55,6 +56,7 @@ def get_filters():
             print('\nAttempted input: {}'.format(month))
     
     #repeatedly ask user for valid input
+    """prevent recursive code """
     while month not in months:
         month = str(input('\nPlease check your input. The month entered is either outside the expected range of input or is misspelled.\n'))
 
@@ -70,7 +72,9 @@ def get_filters():
             break
         finally:
             print('\nAttempted input: {}'.format(day))
-
+            
+    """prevent recursive code """
+    
     while day not in days:
         day = str(input('\nPlease check your input. The day entered is either outside the expected range of input or is mispelled.\n'))
 
